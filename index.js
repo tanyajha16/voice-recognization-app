@@ -9,6 +9,7 @@ try {
 } catch (e) {
   console.error(e);
   $(".no-browser-support").show();
+  window.alert("Recommended to use Google Chrome");
   $(".app").hide();
 }
 
@@ -153,7 +154,7 @@ function readOutLoud(message) {
   speech.text = message;
   speech.volume = 2;
   speech.rate = 1;
-  speech.pitch = 500;
+  speech.pitch = 400;
 
   window.speechSynthesis.speak(speech);
 }
